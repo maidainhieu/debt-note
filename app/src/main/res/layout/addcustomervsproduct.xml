@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Tên khách hàng"
+        android:textColor="#E61717"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/txtCustomerAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập khách hàng mới ở đây"
+        android:inputType="none"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Mặt hàng"
+                android:textColor="#E41616"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/txtProductAdd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:hint="Nhập mặt hàng"
+                android:inputType="text"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Đơn giá"
+                android:textColor="#E80F0F"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/txtUnitPrice"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:hint="Nhập đơn giá"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnAddCustormerOrProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Danh sách mặt hàng"
+        android:textColor="#EA1515"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/lvListProduct"
+        android:layout_width="match_parent"
+        android:layout_height="146dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Danh sách khách hàng"
+        android:textColor="#DD1616"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/lvListCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="154dp" />
+
+
+</LinearLayout>
